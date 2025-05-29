@@ -1,3 +1,8 @@
+# Create Laravel Application
+```
+laravel new example-app
+```
+
 `Dockerfile`
 
 ```
