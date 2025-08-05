@@ -37,4 +37,18 @@ Key pair type -> RSA
 
 Private key file format -> pem
 
+
+# Instances -> Connect -> SSH client -> Copy Paste Example ssh into Git Bash
+
+sudo apt update
+
+sudo apt install git
+
+apt-get install nodejs -y
+
+# Clone React Project
+
+git clone URL
+
+
 Create key pair
