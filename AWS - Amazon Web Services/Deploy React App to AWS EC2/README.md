@@ -44,7 +44,7 @@ sudo apt update
 
 sudo apt install git
 
-apt-get install nodejs -y
+sudo apt install -y nodejs npm
 
 # Clone React Project
 
