@@ -53,3 +53,17 @@ docker run -d -p 80:80 web:latest
 ```
 docker ps
 ```
+
+
+# 
+```
+docker rmi --force web:latest
+```
+
+```
+docker build -t web:latest . --no-cache
+```
+
+```
+docker push web:latest
+```
