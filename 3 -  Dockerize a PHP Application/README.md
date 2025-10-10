@@ -126,6 +126,25 @@ You’ll see:
 > Connected successfully!
 > (A table of users)
 
+```bash
+docker compose up -d
+```
+
+```bash
+docker compose ps
+```
+
+```bash
+docker compose exec db bash
+```
+
+```
+mysql -u root -p root
+```
+
+```
+SHOW DATABASES;
+```
 ---
 
 ## 🧹 Stop Containers
