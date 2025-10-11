@@ -23,6 +23,8 @@ php-mysql-docker/
 
 ## ⚙️ Step 1: Create `docker-compose.yml`
 
+# this `docker-compose.yml` use prebuilt PHP image
+
 ```yaml
 version: '3.8'
 
@@ -68,6 +70,9 @@ RUN docker-php-ext-install mysqli
 ```
 
 `docker-compose.yml`
+
+# this `docker-compose.yml` building your own PHP image with mysqli installed
+
 ```yml
 services:
   web:
