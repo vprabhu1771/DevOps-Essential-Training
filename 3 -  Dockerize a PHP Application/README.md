@@ -53,13 +53,50 @@ services:
 volumes:
   db_data:
 ```
-
 This defines:
 
 * `php` → Apache + PHP container serving files from `php/`
 * `db` → MySQL database with an initial SQL script
 
 ---
+
+# OR
+`Dockerfile`
+```yml
+FROM php:apache
+RUN docker-php-ext-install mysqli
+```
+
+`docker-compose.yml`
+```yml
+services:
+  web:
+    # image: php:8.2-apache
+    build: .
+    container_name: php_app
+    volumes:
+      - ./php:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db_data:
+```
 
 ## 🗄️ Step 2: Create `db/init.sql`
 
