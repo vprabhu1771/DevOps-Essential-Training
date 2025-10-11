@@ -200,3 +200,5 @@ docker-compose down -v
 ---
 
 Would you like me to add **phpMyAdmin** to the setup so you can view the database visually in a browser ([http://localhost:8081](http://localhost:8081))?
+
+![Image](1.PNG)
