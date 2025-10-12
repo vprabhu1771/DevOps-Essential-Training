@@ -116,6 +116,15 @@ Dockerfile
 .dockerignore
 ```
 
+# Stop running container
+```
+docker stop <container_id>
+```
+
+# Remove container
+```
+docker rm <container_id>
+```
 ---
 
 Would you like me to extend this example to use **Express.js** (for serving an HTML page or API endpoint)?
