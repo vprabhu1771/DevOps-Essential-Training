@@ -125,6 +125,11 @@ docker stop <container_id>
 ```
 docker rm <container_id>
 ```
+
+# Remove image
+```
+docker rmi <image_id>
+```
 ---
 
 Would you like me to extend this example to use **Express.js** (for serving an HTML page or API endpoint)?
