@@ -136,6 +136,7 @@ services:
     volumes:
       - .:/app
 
+  # MySQL
   db:
     image: mysql:8.0
     container_name: mysql_db
@@ -147,6 +148,20 @@ services:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
 
 volumes:
   mysql_data:
