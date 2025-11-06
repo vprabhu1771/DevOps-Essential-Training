@@ -1,3 +1,7 @@
+```
+https://www.youtube.com/playlist?list=PLSe91q1rf5vV-gTi0zJTz1BNvnb0x426p
+```
+
 Below is a **simple and working Jenkinsfile** for **Laravel CI/CD using Docker Compose** 🚀
 (Assuming Jenkins is installed with Docker + Docker Compose plugins and correct permissions).
 
