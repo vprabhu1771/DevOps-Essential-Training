@@ -226,3 +226,7 @@ testWidgets('Login flow test', (WidgetTester tester) async {
 ---
 
 Would you like me to include **Firebase emulator setup** or **GitHub Actions Android emulator automation** for this test next?
+
+![Image](1.png)
+![Image](2.png)
+![Image](3.png)
