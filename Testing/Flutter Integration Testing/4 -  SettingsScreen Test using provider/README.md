@@ -117,3 +117,6 @@ flutter test integration_test
 ---
 
 Would you like me to extend this test to also verify that the **theme colors** (e.g., background or AppBar color) actually change when toggling the switch?
+
+![Image](1.png)
+![Image](2.png)
