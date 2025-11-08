@@ -1,5 +1,10 @@
 Let's set up **Flutter Integration Testing with Automation** step by step — so you can run full app tests automatically (locally or in CI/CD).
 
+#  Flutter Integration Testing - Testing Automation 
+```
+https://www.youtube.com/watch?v=TG9VZ17jnGk
+```
+
 ---
 
 ## 🧩 1. What Is Integration Testing in Flutter?
